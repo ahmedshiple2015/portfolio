@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Abdelrahman</title>
+    <meta name="description" content="Abdelrahman Osama – Mechatronics & Industrial Automation Engineer. PLC, HMI/SCADA, and embedded systems specialist.">
+    <meta property="og:title" content="Portfolio | Abdelrahman Osama">
+    <meta property="og:description" content="Mechatronics & Industrial Automation Engineer specializing in PLC, HMI/SCADA, and control systems.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#030305">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Inter:wght@300;400;700&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <div class="halftone-overlay"></div>
+
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- FIX: Logo now has initials -->
+                <a class="navbar-brand logo" href="#">AO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav nav-links">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero section">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-7 hero-text" data-reveal="left">
+                        <span class="intro-tag">
+                            <i class="fas fa-microchip me-1"></i> Open to Work
+                        </span>
+                        <h1 class="display-1 fw-bold">Abdelrahman Osama.</h1>
+                        <!-- FIX: data-text attribute for reliable typewriter, text matches actual field -->
+                        <p class="typewriter lead mb-4" data-text="Mechatronics &amp; Industrial Automation Engineer"></p>
+                        <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
+                            <!-- NEW: CV download button -->
+                            <a href="Abdelrahman osama CV.pdf" download class="btn btn-premium">
+                                <i class="fas fa-download me-2"></i>Download CV
+                            </a>
+                            <a href="#contact" class="btn btn-outline-contact">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 hero-image" data-reveal="right">
+                        <div class="image-wrapper mx-auto">
+                            <!-- FIX: onerror fallback -->
+                            <img src="portrait.png" alt="Abdelrahman Osama Portrait" class="img-fluid"
+                                 onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- NEW: Scroll indicator -->
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title mb-5" data-reveal="top">About Me</h2>
+                <div class="row gy-5">
+                    <div class="col-lg-7 about-text" data-reveal="left">
+                        <p class="fs-5 mb-4">Mechatronics Engineer and recent graduate with a strong foundation in industrial automation, control systems, and PLC programming. Hands-on experience with PLC logic development, HMI and SCADA systems, and industrial I/O. Solid academic background in mechatronics engineering with good knowledge of embedded systems fundamentals. Strong problem-solving skills and ability to work effectively in team-based engineering environments.</p>
+                        <div class="row stats mt-5 text-center text-lg-start">
+                            <div class="col-sm-4 mb-4 mb-sm-0">
+                                <span class="d-block fw-bold fs-2 mono-accent">3.2</span>
+                                <span class="text-muted text-uppercase small">GPA</span>
+                            </div>
+                            <div class="col-sm-4 mb-4 mb-sm-0">
+                                <span class="d-block fw-bold fs-2 mono-accent">2024</span>
+                                <span class="text-muted text-uppercase small">Graduated</span>
+                            </div>
+                            <div class="col-sm-4">
+                                <span class="d-block fw-bold fs-2 mono-accent">Tanta</span>
+                                <span class="text-muted text-uppercase small">University</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- IMPROVED: Skill tags instead of plain list -->
+                    <div class="col-lg-5 skills-grid" data-reveal="right">
+                        <p class="text-muted text-uppercase small fw-bold mb-3" style="letter-spacing:2px">Core Skills</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PLC Programming</span>
+                            <span class="skill-tag">Siemens TIA Portal</span>
+                            <span class="skill-tag">Allen-Bradley</span>
+                            <span class="skill-tag">HMI / SCADA</span>
+                            <span class="skill-tag">Wonderware</span>
+                            <span class="skill-tag">EasyBuilder</span>
+                            <span class="skill-tag">Industrial Automation</span>
+                            <span class="skill-tag">VFDs</span>
+                            <span class="skill-tag">Embedded Systems</span>
+                            <span class="skill-tag">Microcontrollers</span>
+                            <span class="skill-tag">Control Systems</span>
+                            <span class="skill-tag">Industrial I/O</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title mb-5" data-reveal="top">Selected Projects</h2>
+                <div class="row g-4 project-grid">
+                    <div class="col-md-6" data-reveal="bottom">
+                        <div class="card h-100 bg-dark text-white border-secondary-subtle project-card">
+                            <div class="placeholder-img">
+                                <img src="ADAS.jpg" alt="ADAS Prototype"
+                                     onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback')">
+                            </div>
+                            <div class="card-body p-4">
+                                <h3 class="card-title">ADAS Prototype</h3>
+                                <p class="card-text text-muted">Advanced Driver Assistance System developed as a graduation project using sensors and AI-based decision-making.</p>
+                                <a href="#" class="view-btn">View Project Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-reveal="bottom">
+                        <div class="card h-100 bg-dark text-white border-secondary-subtle project-card">
+                            <div class="placeholder-img">
+                                <img src="Dojo.jpg" alt="PLC Training at PLC Dojo"
+                                     onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback')">
+                            </div>
+                            <div class="card-body p-4">
+                                <h3 class="card-title">Industrial Automation Training</h3>
+                                <p class="card-text text-muted">Specialized training in PLC logic development, HMI/SCADA integration, and system debugging at PLC Dojo.</p>
+                                <a href="#" class="view-btn">View Training Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-box text-center py-5" data-reveal="top">
+                    <!-- FIX: Copy tailored to automation engineer -->
+                    <h2 class="display-4 fw-bold mb-4">Let's automate something <span class="accent-text">incredible</span>.</h2>
+                    <p class="lead mb-5">Have a system to build or a process to optimize? Let's make it happen.</p>
+                    <a href="mailto:osamaabdelrahman922@gmail.com" class="btn btn-premium">Get In Touch</a>
+                    <div class="social-links d-flex justify-content-center gap-4 fs-4 pt-4">
+                        <!-- FIX: aria-label on icon-only link -->
+                        <a href="https://www.linkedin.com/in/abdelrahman-osama-12a55a245?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                           aria-label="Abdelrahman Osama on LinkedIn"
+                           class="text-white opacity-75 hover-opacity-100 transition-300"
+                           target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Abdelrahman. Built with passion.</p>
+    </footer>
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
